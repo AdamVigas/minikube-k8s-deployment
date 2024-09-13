@@ -18,32 +18,29 @@ This repository provides Kubernetes manifests for deploying an Nginx application
 1. **Install Minikube and kubectl** by following the respective installation guides.
 
 2. **Clone this repository**:
-   ```bash
+```bash
    git clone <repository-url>
    cd <repository-directory>
 ```
 
-## Usage 
+## Usage
 
 To deploy the Nginx application along with its associated resources, follow these steps:
 
 Start Minikube and apply Kubernetes manifests: You can use the provided redeploy.bat script to automate the entire deployment process.
 
 ```bash
-redeploy.bat
+   redeploy.bat
 ```
 
 This script will perform the following tasks:
 
-1. Start Minikube  
-2. Apply the following Kubernetes resources:  
-   - ServiceAccount (`k8s/service-account.yaml`)  
-   - Secret (`k8s/secret.yaml`)  
-   - Deployment (`k8s/deployment.yaml`)  
-   - Service (`k8s/service.yaml`)  
-   - Horizontal Pod Autoscaler (`k8s/hpa.yaml`)  
-   - Pod Disruption Budget (`k8s/pdb.yaml`)  
-3. Expose the Nginx service using Minikube.  
-
-Access the Nginx service:
-- After running the `redeploy.bat` script, the Nginx service will be exposed automatically by Minikube, and you can access it via the default browser.
+- Start Minikube
+- Apply the following Kubernetes resources:
+- ServiceAccount (k8s/service-account.yaml)
+- Secret (k8s/secret.yaml)
+- Deployment (k8s/deployment.yaml)
+- Service (k8s/service.yaml)
+- Horizontal Pod Autoscaler (k8s/hpa.yaml)
+- Pod Disruption Budget (k8s/pdb.yaml)
+- Expose the Nginx service using Minikube.
