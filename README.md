@@ -30,7 +30,7 @@ To deploy the Nginx application along with its associated resources, follow thes
 Start Minikube and apply Kubernetes manifests: You can use the provided redeploy.bat script to automate the entire deployment process.
 
 ```bash
-   ./infra/scripts/redeploy.bat
+   ./infra/scripts/deploy.bat
 ```
 
 This script will perform the following tasks:
