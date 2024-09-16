@@ -47,17 +47,4 @@ This script will perform the following tasks:
 - Horizontal Pod Autoscaler (k8s/hpa.yaml)
 - Pod Disruption Budget (k8s/pdb.yaml)
 
-3. **Ensure the Pods are running before accessing the service. To check the status of the pods, run:**
-```bash
-   kubectl get pods
-```
-Make sure all pods have the status Running before proceeding to the next step.
-
-4. **Run the Nginx service by running the following command:**
-
-```bash
-   minikube service nginx-service
-```
-
-
-This will open the Nginx service in your default web browser. Alternatively, you can access the service by navigating to the URL shown in the output of the minikube service command.
+Once all the pods are in the **ready** state, the script will automatically run the Nginx service.
